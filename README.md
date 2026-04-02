@@ -111,7 +111,7 @@ Future versions may expand support, but this README only documents the features 
 
 1. Update the version in `module.json`.
 2. Commit and push your changes.
-3. Create and push a matching tag such as `v1.0.0`.
+3. Create and push a matching tag such as `v1.0.1`.
 4. GitHub Actions will build `lancer-nhp-toolkit.zip` and attach it, along with `module.json`, to the GitHub release.
 
 ## Support
