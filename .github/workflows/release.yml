@@ -1,0 +1,43 @@
+name: Release Foundry Module
+
+on:
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Validate tag matches module version
+        shell: bash
+        run: |
+          VERSION="$(python -c 'import json; print(json.load(open("module.json", encoding="utf-8"))["version"])')"
+          TAG="${GITHUB_REF_NAME#v}"
+          if [[ "$VERSION" != "$TAG" ]]; then
+            echo "module.json version ($VERSION) does not match tag ($TAG)"
+            exit 1
+          fi
+
+      - name: Create release archive
+        shell: bash
+        run: |
+          mkdir -p dist
+          zip -r "dist/lancer-nhp-toolkit.zip" . \
+            -x ".git/*" \
+            -x ".github/*" \
+            -x "dist/*"
+
+      - name: Create GitHub release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            module.json
+            dist/lancer-nhp-toolkit.zip
