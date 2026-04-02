@@ -30,10 +30,12 @@ jobs:
         shell: bash
         run: |
           mkdir -p dist
-          zip -r "dist/lancer-nhp-toolkit.zip" . \
-            -x ".git/*" \
-            -x ".github/*" \
-            -x "dist/*"
+          mkdir -p "dist/package/lancer-nhp-toolkit"
+          cp -r LICENSE README.md module.json images scripts styles "dist/package/lancer-nhp-toolkit/"
+          (
+            cd dist/package
+            zip -r "../lancer-nhp-toolkit.zip" "lancer-nhp-toolkit"
+          )
 
       - name: Create GitHub release
         uses: softprops/action-gh-release@v2
