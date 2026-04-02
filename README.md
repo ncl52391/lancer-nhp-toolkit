@@ -119,6 +119,24 @@ Future versions may expand support, but this README only documents the features 
 - Repository: [ncl52391/lancer-nhp-toolkit](https://github.com/ncl52391/lancer-nhp-toolkit)
 - Issues: [GitHub Issues](https://github.com/ncl52391/lancer-nhp-toolkit/issues)
 
+## Temporary Art Credits
+
+The current placeholder ability icons are human-made icons from Game-icons.net and are used under CC BY 3.0:
+
+- `memetic-spark.png`: "Psychic waves" by Lorc
+- `transmuting-spark.png`: "Unstable orb" by Lorc
+- `hurl-into-the-duat.png`: "Portal" by Lorc
+
+Sources:
+
+- https://game-icons.net/1x1/lorc/psychic-waves.html
+- https://game-icons.net/1x1/lorc/unstable-orb.html
+- https://game-icons.net/1x1/lorc/portal.html
+
+License:
+
+- https://creativecommons.org/licenses/by/3.0/
+
 ## License
 
 GPL-3.0-only
