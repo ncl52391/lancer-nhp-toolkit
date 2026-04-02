@@ -2,6 +2,7 @@
   "id": "lancer-nhp-toolkit",
   "title": "Lancer NHP Toolkit",
   "description": "Automation and tracking tools for Lancer NHP mechanics, including Iconoclast talents and Hurl Into the Duat support. Designed to streamline play and expand with additional NHP features over time.",
+  "tags": ["lancer", "automation", "macros", "utilities"],
   "version": "1.0.0",
   "authors": [
     {
@@ -12,16 +13,32 @@
     "minimum": "11",
     "verified": "12"
   },
+  "relationships": {
+    "systems": [
+      {
+        "id": "lancer",
+        "type": "system"
+      }
+    ]
+  },
 
   "esmodules": ["scripts/main.js"],
 
   "styles": ["styles/module.css"],
 
+  "media": [
+    {
+      "type": "setup",
+      "url": "images/nhp-toolkit.png",
+      "thumbnail": "images/nhp-toolkit.png"
+    }
+  ],
+
   "url": "https://github.com/ncl52391/lancer-nhp-toolkit",
   "manifest": "https://github.com/ncl52391/lancer-nhp-toolkit/releases/latest/download/module.json",
   "download": "https://github.com/ncl52391/lancer-nhp-toolkit/releases/download/v1.0.0/lancer-nhp-toolkit.zip",
 
-  "license": "MIT",
+  "license": "LICENSE",
   "readme": "https://github.com/ncl52391/lancer-nhp-toolkit/blob/main/README.md",
 
   "bugs": "https://github.com/ncl52391/lancer-nhp-toolkit/issues",

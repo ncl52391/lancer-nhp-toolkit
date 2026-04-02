@@ -2,17 +2,29 @@
 
 Automation and tracking tools for Lancer NHP mechanics in Foundry VTT, including Iconoclast talents and Hurl Into the Duat support.
 
+This module targets the `lancer` system and is intended for Foundry VTT generations 11 and 12.
+
 ## Installation
 
 Install via Foundry using this manifest URL:
 
 `https://github.com/ncl52391/lancer-nhp-toolkit/releases/latest/download/module.json`
 
+## Included Macros
+
+On first launch in a Lancer world, the module creates these world macros if they do not already exist:
+
+- `Memetic Spark`
+- `Transmuting Spark`
+- `Hurl Into the Duat`
+
+Existing macros with the same names are left untouched.
+
 ## Development
 
 1. Copy this folder into your Foundry `Data/modules/` directory.
 2. Restart Foundry VTT.
-3. Enable **Lancer NHP Toolkit** in your world.
+3. Enable **Lancer NHP Toolkit** in a Lancer world.
 
 ## Releasing
 
@@ -23,4 +35,4 @@ Install via Foundry using this manifest URL:
 
 ## License
 
-MIT
+GPL-3.0-only
