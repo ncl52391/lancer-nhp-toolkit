@@ -32,7 +32,11 @@ The goal of this module is to reduce manual actions and bookkeeping at the table
 
 ## Installation
 
-Until we get approved on Foundry, please install manually.
+Install through Foundry using the manifest URL, or install manually if you prefer.
+
+Manifest URL:
+
+`https://github.com/ncl52391/lancer-nhp-toolkit/releases/latest/download/module.json`
 
 1. Download the release ZIP from GitHub.
 2. Extract it into your Foundry `Data/modules/` directory.
