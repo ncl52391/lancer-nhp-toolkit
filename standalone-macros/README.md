@@ -16,6 +16,7 @@ These macros are designed for use in a Lancer world without installing the `lanc
 - `transmuting-spark.js`
 - `hurl-into-the-duat.js`
 - `transcendence-tracker.js`
+- `apply-immobilized-and-shredded.js`
 
 ## Notes
 
@@ -24,4 +25,5 @@ These macros are designed for use in a Lancer world without installing the `lanc
 - They do not depend on the module or its assets.
 - `Memetic Spark` and `Transmuting Spark` can apply damage from the chat card.
 - `Hurl Into the Duat` uses a dialog to advance or reset the tracked OSIRIS gate.
-- `Transcendence Tracker` uses a dialog to lower the die, reset it, enter Transcendence, or end it.
+- `Transcendence Tracker` uses a chat card to lower the die, reset it, enter Transcendence, or end it.
+- `Apply Immobilized + Shredded` applies both statuses to each currently targeted token and reports the result in chat.
